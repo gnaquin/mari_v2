@@ -1,20 +1,113 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul>
+        <li><a class="one" href="#">About</a></li>
+        <li><a class="two" href="#">Calendar</a></li>
+        <li><a class="two" href="#">Community Groups</a></li>
+        <li><a class="two" href="#">Workshops</a></li>
+      </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
+  <!-- header ends -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="page">
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="cover">
+      <img src="../../assets/pictures/cover.jpg" />
+    </div>
+
+    <div class="about">
+      <p>
+        Created to bring inner healing to bring outer transformation. Growing people, families, communities, and cities
+        through Creative Arts such as Art, Dance, Writing, Drama, Culinary.
+      </p>
+    </div>
+
+    <div class="calendarAndContact">
+      <ion-card class="calCard" color="primary">
+        <ion-card-header color="primary">
+          <ion-icon name="calendar-outline"></ion-icon>
+          <ion-card-title>Special Event Calendar</ion-card-title>
+        </ion-card-header>
+        <ion-card-content color="primary">
+          <ion-list color="primary">
+            <ion-item color="primary">
+              <ion-label>Art Community - November 23rd - 7-9PM</ion-label>
+              <ion-button fill="outline" color="tertiary">Details</ion-button>
+            </ion-item>
+            <ion-item color="primary">
+              <ion-label>Art Community - December 7th - 7-9PM</ion-label>
+              <ion-button fill="outline" color="tertiary">Details</ion-button>
+            </ion-item>
+            <ion-item color="primary">
+              <ion-label>Art Community - December 21st - 7-9PM</ion-label>
+              <ion-button fill="outline" color="tertiary">Details</ion-button>
+            </ion-item>
+            <ion-item color="primary">
+              <ion-label>Art Community - January 11th - 7-9PM</ion-label>
+              <ion-button fill="outline" color="tertiary">Details</ion-button>
+            </ion-item>
+            <ion-item color="primary">
+              <ion-label>Art Community - January 25th - 7-9PM</ion-label>
+              <ion-button fill="outline" color="tertiary">Details</ion-button>
+            </ion-item>
+            <ion-item color="primary">
+              <ion-label>Art Community - February 8th - 7-9PM</ion-label>
+              <ion-button fill="outline" color="tertiary">Details</ion-button>
+            </ion-item>
+          </ion-list>
+        </ion-card-content>
+      </ion-card>
+
+      <ion-card class="contact">
+        <ion-card-header>
+          <ion-icon color="success" name="mail-outline"></ion-icon>
+          <ion-card-title color="success">Contact Us</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item color="primary">
+            <ion-label position="floating">Name</ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item color="primary">
+            <ion-label position="floating">Message</ion-label>
+            <ion-textarea></ion-textarea>
+          </ion-item>
+        </ion-card-content>
+        <div class="contactBtn">
+          <ion-button class="ion-padding" fill="outline" color="tertiary">Submit</ion-button>
+        </div>
+      </ion-card>
+    </div>
+
+    <ion-footer>
+      <div class="footer">
+
+        <div class="three">
+          <p class="footerText">
+            creativekingdominternational@gmail.com
+          </p>
+          <p class="footerText">
+            250 West Broadway, Waukesha, WI 53186
+          </p>
+        </div>
+
+        <img src="../../assets/pictures/logo_transparent.png" />
+
+        <div class="two">
+          <ion-button shape="round" fill="clear" size="large" color="dark"
+            href="https://www.facebook.com/CreativeArtsResourceCenter">
+            <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+          </ion-button>
+        </div>
+
+      </div>
+    </ion-footer>
+
   </div>
 </ion-content>
