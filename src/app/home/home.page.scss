@@ -2,9 +2,10 @@
 header {
   position: fixed;
   z-index: 999;
-  background-color: #ede0fb;
-  margin-top: 1em;
+  background-color: #ad95c7;
   font-family: 'Lato', sans-serif;
+  min-height: 3.5em;
+  min-width: 100vw;
 }
 
 nav {
@@ -16,8 +17,8 @@ nav {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
-  background-color: #fffbf0;
-  border-bottom: 0.3em solid #ffd893;
+  background-color: #ad95c7;
+  border-bottom: 0.3em solid black;
 }
 
 .nav-toggle:checked ~ nav {
@@ -162,7 +163,9 @@ ion-content {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  max-height: 100vh;
+  margin-top: 2.5em
 }
 
 .about {
