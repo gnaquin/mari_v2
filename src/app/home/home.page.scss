@@ -3,17 +3,12 @@ header {
   position: fixed;
   z-index: 999;
   background-color: #ad95c7;
-  font-family: 'Lato', sans-serif;
   min-height: 3.5em;
   min-width: 100vw;
 }
 
 nav {
   position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
@@ -147,8 +142,8 @@ nav a {
 
 // end header
 
-ion-content {
-  font-family: 'Lato', sans-serif;
+ion-content{ 
+  font-family: Lato !important;
 }
 
 .page {
@@ -170,13 +165,8 @@ ion-content {
 
 .about {
   background-color: #ff4a75;
-  height: 10em;
+  height: fit-content;
   width: 33vw;
-  margin-right: 2em;
-  margin-top: -4em;
-  margin-bottom: 5em;
-  border-radius: 1.5em;
-  align-self: end;
 }
 
 // calendar and contact start
