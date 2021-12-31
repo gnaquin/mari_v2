@@ -166,8 +166,27 @@ ion-content{
 .about {
   background-color: #ff4a75;
   height: fit-content;
-  width: 33vw;
+  width: 93%;
+  max-width: 50ch;
+  margin-top: -0.8em;
+  padding: .5em;
+  z-index: 1;
 }
+
+.back {
+  background-color: black;
+  height: fit-content;
+  width: 93%;
+  max-width: 50ch;
+  margin-top: -7em;
+  margin-left: .7em;
+  padding: .5em;
+  z-index: 0;
+}
+
+// .info {
+
+// }
 
 // calendar and contact start
 .calendarAndContact {
