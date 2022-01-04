@@ -142,7 +142,7 @@ nav a {
 
 // end header
 
-ion-content{ 
+ion-content {
   font-family: Lato !important;
 }
 
@@ -160,7 +160,7 @@ ion-content{
   width: 100%;
   height: auto;
   max-height: 100vh;
-  margin-top: 2.5em
+  margin-top: 2.5em;
 }
 
 .about {
@@ -169,9 +169,9 @@ ion-content{
   width: 93%;
   max-width: 50ch;
   margin-top: -0.8em;
-  padding: .5em;
+  padding: 0.5em;
   z-index: 1;
-  color: white
+  color: white;
 }
 
 .back {
@@ -180,40 +180,55 @@ ion-content{
   width: 93%;
   max-width: 50ch;
   margin-top: -7em;
-  margin-left: .7em;
-  padding: .5em;
+  margin-left: 0.7em;
+  padding: 0.5em;
   z-index: 0;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   width: 100%;
   margin-top: 1em;
-  justify-content: space-around;
 }
 
 .info {
-  max-width: 40ch;
+  min-width: 20ch;
+  max-width: 45ch;
+  margin-top: 1em;
+}
+
+h1 {
+  display: table;
+  padding: .7em;
+  background-color: black;
+  color: white
 }
 
 #who {
   background-color: #ad95c7;
   max-width: 45ch;
   height: fit-content;
-  padding: .5em;
-  color: white
+  color: white;
 }
 
 #service {
   background-color: #ff4a75;
+  color: white;
+  height: fit-content;
+  width: fit-content;
+}
+
+.serviceContainer {
   display: flex;
   flex-wrap: wrap;
 }
 
 .services {
-  display: flex;
-  flex-wrap: wrap;
+  padding: 0.5em;
+  margin: 0.5em;
+  min-width: 20ch;
 }
 
 // calendar and contact start
