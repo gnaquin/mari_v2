@@ -171,6 +171,7 @@ ion-content{
   margin-top: -0.8em;
   padding: .5em;
   z-index: 1;
+  color: white
 }
 
 .back {
@@ -184,9 +185,36 @@ ion-content{
   z-index: 0;
 }
 
-// .info {
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 1em;
+  justify-content: space-around;
+}
 
-// }
+.info {
+  max-width: 40ch;
+}
+
+#who {
+  background-color: #ad95c7;
+  max-width: 45ch;
+  height: fit-content;
+  padding: .5em;
+  color: white
+}
+
+#service {
+  background-color: #ff4a75;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 // calendar and contact start
 .calendarAndContact {

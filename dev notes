@@ -2,7 +2,7 @@ font: lato
 colors: 
    -blue #56dcde
    -pink #ff4a75
-   -purple #ede0fb
+   -purple #ede0fb, #ad95c7
    -paper #cccdd2
 
 separate calendar page for full-sized calendar
