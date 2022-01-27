@@ -146,14 +146,14 @@ ion-content {
   margin-top: 2em;
   display: flex;
   justify-content: end;
-  background-color: #56dcde;
+  background-color: #b5afbd;
 }
 
 .cover > h1 {
   transform: rotate(-90deg);
   background: none;
   -webkit-text-stroke: .1px #FFFFF0;
-  color: #56dcde;
+  color: #b5afbd;
   font-size: 75px;
   align-self: end;
   font-weight:bolder;
@@ -207,17 +207,14 @@ ion-content {
   width: 100%;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
 }
 
 .container {
   display: flex;
-  flex-wrap: wrap;
-}
-
-.side_container {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 50%;
+  flex-wrap: wrap-reverse;
+  justify-content: space-evenly;
+  align-content: center;
 }
 
 h1 {
@@ -229,10 +226,11 @@ h1 {
 
 .who {
   background-color: #ff4a75;
-  max-width: 45ch;
-  height: fit-content;
+  width: 30%;
+  min-height: 100%;
   color: white;
-  align-self: center;
+  justify-content: space-around;
+  align-content: space-around;
 }
 
 .who > p {
@@ -242,19 +240,23 @@ h1 {
 .service {
   background-color: #56dcde;
   color: white;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 @media screen and (max-width: 635px) {
   .service {
     max-width: 100%;
   }
+
+  .who {
+    min-width: 100%;
+  }
 }
 
 .serviceContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .services {
@@ -296,6 +298,7 @@ ion-footer {
   margin-top: 5em;
   background-color: #FFFFF0;
   width: 100vw;
+  height: 10em
 }
 
 .footer {
