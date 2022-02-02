@@ -1,10 +1,20 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>full calendar</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <header>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+    <nav>
+      <ul>
+        <li><a class="two" href="#">Contact</a></li>
+        <li><a class="two" href="localhost:8100/calendar">Calendar</a></li>
+        <li><a class="two" href="#">Donate</a></li>
+        <li><a class="two" href="#">Sign Up</a></li>
+        <li><img id="headerLogo" src="../../assets/icon/icon.png" /></li>
+      </ul>
+    </nav>
+    <img id="headerLogoTwo" src="../../assets/icon/icon.png" />
+    <label for="nav-toggle" class="nav-toggle-label">
+      <span></span>
+    </label>
+  </header>
   <div class="container">
     <iframe
       class="calendar"

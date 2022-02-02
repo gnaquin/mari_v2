@@ -369,6 +369,32 @@ ion-card {
   max-width: 7em;
 }
 
+.innerContactContainers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 50ch;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.innerLocationContainer {
+  width: 100%;
+  min-width: 50ch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+@media screen and (max-width: 900px) {
+  .contactContainer, .locationContainer {
+    width: 100%
+  }
+}
+
 .testimony {
   background-color: #36454F;
   width: 100%;
