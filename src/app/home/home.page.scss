@@ -265,7 +265,7 @@ h1 {
   justify-content: space-around;
   align-content: space-around;
   font-size: 1.2rem;
-  line-height: 1.6
+  line-height: 1.6;
 }
 
 .who > p {
@@ -281,16 +281,18 @@ h1 {
 
 @media screen and (max-width: 635px) {
   .innerContainer {
-    max-width: 80%;
+    max-width: 95%;
     padding: 0
   }
 
   .service {
-    max-width: 80%;
+    max-width: 95%;
+    margin-top: 1.5em
   }
 
   .who {
     min-width: 100%;
+    margin: 0 0 .5em 0;
   }
 }
 
@@ -336,7 +338,8 @@ ion-card {
 .calCard {
   overflow-y: scroll;
   min-width: 100%;
-  margin: .5em 0 .5em 0;
+  max-height: 540px;
+  margin: 0 0 .5em 0;
   border-radius: 0;
 }
 
@@ -365,7 +368,7 @@ ion-card {
   width: 100%
 }
 
-.socialContainer > h1, ion-button {
+.socialContainer > h1, .socialContainer > ion-button {
   width: 100%
 }
 

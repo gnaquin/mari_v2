@@ -4,10 +4,10 @@
       <input type="checkbox" id="nav-toggle" class="nav-toggle" />
       <nav>
         <ul>
-          <li><a class="two" href="#">Contact</a></li>
-          <li><a class="two" href="#">Calendar</a></li>
-          <li><a class="two" href="#">Donate</a></li>
-          <li><a class="two" href="#">Sign Up</a></li>
+          <li><a class="two" (click)="contactButton()">Contact</a></li>
+          <li><a class="two" (click)="calendarButton()">Calendar</a></li>
+          <li><a class="two" (click)="donateButton()">Donate</a></li>
+          <li><a class="two" (click)="registerButton()">Sign Up</a></li>
           <li><img id="headerLogo" src="../../assets/icon/icon.png" /></li>
         </ul>
       </nav>
@@ -38,7 +38,7 @@
           <ion-card class="calCard">
             <ion-card-header>
               <ion-icon name="calendar-outline"></ion-icon>
-              <ion-card-title> Our Schedule</ion-card-title>
+              <ion-card-title>Upcoming Events</ion-card-title>
             </ion-card-header>
             <ion-card-content>
               <ion-list>
@@ -46,49 +46,65 @@
                   <ion-label
                     >Art Community <br /><i>Nov 23rd 7PM - 9PM</i></ion-label
                   >
-                  <ion-button expand="block" color="success">
+                  <ion-button (click)="calendarButton()" expand="block" color="success">
                     <div class="serviceButnText">
-                      <span> details </span>
+                      <span> more dates </span>
                     </div>
                   </ion-button>
                 </ion-item>
                 <ion-item>
-                  <ion-label></ion-label>
-                  <ion-button expand="block" color="success">
+                  <ion-label>Creative Worship <br /><i>Nov 27th 10AM - 11AM</i></ion-label>
+                  <ion-button color="success">
                     <div class="serviceButnText">
-                      <span> Register </span>
+                      <span> more dates </span>
                     </div>
                   </ion-button>
                 </ion-item>
                 <ion-item>
-                  <ion-label></ion-label>
-                  <ion-button expand="block" color="success">
+                  <ion-label>Kingdom Writers Association <br /><i>Dec 3rd 7PM - 9PM</i></ion-label>
+                  <ion-button (click)="contactButton()" expand="block" color="success">
                     <div class="serviceButnText">
-                      <span> Register </span>
+                      <span> register </span>
                     </div>
                   </ion-button>
                 </ion-item>
                 <ion-item>
-                  <ion-label></ion-label>
+                  <ion-label>Kingdom Dance and Movement <br /><i>Dec 15th 7PM - 9PM</i></ion-label>
                   <ion-button expand="block" color="success">
                     <div class="serviceButnText">
-                      <span> Register </span>
+                      <span> register </span>
                     </div>
                   </ion-button>
                 </ion-item>
                 <ion-item>
-                  <ion-label></ion-label>
+                  <ion-label>Art Community <br /><i>Dec 20th 7PM - 9PM</i></ion-label>
                   <ion-button expand="block" color="success">
                     <div class="serviceButnText">
-                      <span> Register </span>
+                      <span> more dates </span>
                     </div>
                   </ion-button>
                 </ion-item>
                 <ion-item>
-                  <ion-label></ion-label>
+                  <ion-label>Workshop <br /><i>Dec 23rd 7PM - 9PM</i></ion-label>
                   <ion-button expand="block" color="success">
                     <div class="serviceButnText">
-                      <span> Register </span>
+                      <span> register </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Workshop <br /><i>Dec 29th 7PM - 9PM</i></ion-label>
+                  <ion-button expand="block" color="success">
+                    <div class="serviceButnText">
+                      <span> register </span>
+                    </div>
+                  </ion-button>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Workshop <br /><i>Jan 3rd 7PM - 9PM</i></ion-label>
+                  <ion-button expand="block" color="success">
+                    <div class="serviceButnText">
+                      <span> register </span>
                     </div>
                   </ion-button>
                 </ion-item>
@@ -133,11 +149,11 @@
                 find inner healing, and get encouragement and accountability.
                 Happens every other Tuesday!
               </p>
-              <ion-button expand="block" color="success">
+              <!-- <ion-button expand="block" color="success">
                 <div class="serviceButnText">
                   <span> See Dates </span>
                 </div>
-              </ion-button>
+              </ion-button> -->
             </div>
 
             <div class="services">
@@ -148,11 +164,11 @@
                 writing. Learn how God wants to use your writing gift to touch
                 others, to prophesy, heal, and even bring you through healing.
               </p>
-              <ion-button expand="block" color="success">
+              <!-- <ion-button expand="block" color="success">
                 <div class="serviceButnText">
                   <span> See Dates </span>
                 </div>
-              </ion-button>
+              </ion-button> -->
             </div>
           </div>
 
@@ -165,11 +181,11 @@
                 teachings, and follow the Holy Spirit's lead to create,
                 encourage one another, and have fun!
               </p>
-              <ion-button expand="block" color="success">
+              <!-- <ion-button expand="block" color="success">
                 <div class="serviceButnText">
                   <span> See Dates </span>
                 </div>
-              </ion-button>
+              </ion-button> -->
             </div>
 
             <div class="services">
@@ -180,11 +196,11 @@
                 learn redeemed expressions. You'll learn how to use flags, dance
                 with freedom, and how to connect to God through movement.
               </p>
-              <ion-button expand="block" color="success">
+              <!-- <ion-button expand="block" color="success">
                 <div class="serviceButnText">
                   <span> See Dates </span>
                 </div>
-              </ion-button>
+              </ion-button> -->
             </div>
 
             <div class="services">
@@ -198,11 +214,11 @@
                 prophecy, heal, evangelize, worship, intercede, and encounter
                 the Lord at a weekend workshop- hosted by us or bring us to you!
               </p>
-              <ion-button expand="block" color="success">
+              <!-- <ion-button expand="block" color="success">
                 <div class="serviceButnText">
                   <span> See Dates </span>
                 </div>
-              </ion-button>
+              </ion-button> -->
             </div>
           </div>
         </div>
@@ -217,25 +233,22 @@
 
     <ion-footer>
       <div class="containerTwo">
+
         <div class="contactContainer">
-          <h1>Contact Us</h1>
           <div class="innerContactContainers">
-            <h3>Fill Out Our Form</h3>
-            <ion-button color="success">
+            <p>creativekingdominternational@gmail.com</p>
+          </div>
+
+          <div class="innerContactContainers">
+            <ion-button (click)="contactButton()" color="success">
               <div class="serviceButnText">
                 <span> Contact Form </span>
               </div>
             </ion-button>
           </div>
-
-          <div class="innerContactContainers">
-            <h3>EMAIL</h3>
-            <p>creativekingdominternational@gmail.com</p>
-          </div>
         </div>
 
         <div class="locationContainer">
-          <h1>Location</h1>
 
           <div class="innerLocationContainer">
             <h3>250 West Broadway,<br />Waukesha, WI 53186</h3>
@@ -245,7 +258,6 @@
         </div>
 
         <div class="socialContainer">
-          <h1>Follow Us On Social Media</h1>
 
           <div class="innerSocialContainer">
             <ion-button
