@@ -345,15 +345,15 @@ ion-card {
   flex-wrap: wrap;
   justify-content: space-evenly;
   min-width: 100%;
-  background-image: linear-gradient(-210deg, #FFFFF0, #ede0fb);
+  background-image: linear-gradient(210deg, #FFFFF0, #ede0fb);
 }
 
-.contactContainer, .locationContainer {
-  width: 50%;
-  height: 100%;
+.contactContainer, .locationContainer, .socialContainer {
+  width: 33.333%;
+  min-height: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: start;
+  justify-content: center;
   padding: 1em
 }
 
@@ -363,6 +363,24 @@ ion-card {
 
 .locationContainer > h1, h3, p {
   width: 100%
+}
+
+.socialContainer > h1, ion-button {
+  width: 100%
+}
+
+.contactContainer > h1 {
+  height: 2.5em;
+  margin-left: 0;
+  padding-left: 0
+}
+
+.locationContainer > h1 {
+  height: 2.5em
+}
+
+.socialContainer > h1 {
+  height: 2.5em
 }
 
 #locationLogo {
@@ -380,6 +398,16 @@ ion-card {
 }
 
 .innerLocationContainer {
+  width: 100%;
+  min-width: 50ch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+.innerSocialContainer {
   width: 100%;
   min-width: 50ch;
   display: flex;
@@ -413,27 +441,4 @@ ion-footer {
   background-color: #FFFFF0;
   color: #36454F;
   width: 100vw;
-  height: 10em
-}
-
-.footer {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  align-items: center;
-}
-
-.footer > img {
-  max-width: 10em;
-  justify-self: center;
-}
-
-.two {
-  justify-self: center;
-}
-
-.three {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 1em;
 }

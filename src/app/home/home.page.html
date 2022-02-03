@@ -5,7 +5,7 @@
       <nav>
         <ul>
           <li><a class="two" href="#">Contact</a></li>
-          <li><a class="two" href="localhost:8100/calendar">Calendar</a></li>
+          <li><a class="two" href="#">Calendar</a></li>
           <li><a class="two" href="#">Donate</a></li>
           <li><a class="two" href="#">Sign Up</a></li>
           <li><img id="headerLogo" src="../../assets/icon/icon.png" /></li>
@@ -43,7 +43,9 @@
             <ion-card-content>
               <ion-list>
                 <ion-item>
-                  <ion-label>Art Community <br /><i>Nov 23rd 7PM - 9PM</i></ion-label>
+                  <ion-label
+                    >Art Community <br /><i>Nov 23rd 7PM - 9PM</i></ion-label
+                  >
                   <ion-button expand="block" color="success">
                     <div class="serviceButnText">
                       <span> details </span>
@@ -206,21 +208,29 @@
         </div>
       </div>
 
+      <!-- <div class="container">
+        <div class="testimony">
+
+        </div>
+      </div> -->
+    </div>
+
+    <ion-footer>
       <div class="containerTwo">
         <div class="contactContainer">
           <h1>Contact Us</h1>
           <div class="innerContactContainers">
-            <h3>EMAIL</h3>
-            <p>creativekingdominternational@gmail.com</p>
-          </div>
-
-          <div class="innerContactContainers">
             <h3>Fill Out Our Form</h3>
-            <ion-button expand="block" color="success">
+            <ion-button color="success">
               <div class="serviceButnText">
                 <span> Contact Form </span>
               </div>
             </ion-button>
+          </div>
+
+          <div class="innerContactContainers">
+            <h3>EMAIL</h3>
+            <p>creativekingdominternational@gmail.com</p>
           </div>
         </div>
 
@@ -232,31 +242,22 @@
 
             <img id="locationLogo" src="../../assets/icon/icon.png" />
           </div>
-
-        </div>
-      </div>
-
-      <!-- <div class="container">
-        <div class="testimony">
-
-        </div>
-      </div> -->
-    </div>
-
-    <ion-footer>
-      <div class="footer">
-        <div class="three">
-          <p class="footerText">creativekingdominternational@gmail.com</p>
-          <p class="footerText">250 West Broadway, Waukesha, WI 53186</p>
         </div>
 
-        <img src="../../assets/icon/icon.png" />
+        <div class="socialContainer">
+          <h1>Follow Us On Social Media</h1>
 
-        <div class="two">
-          <ion-button shape="round" fill="clear" size="large" color="dark"
-            href="https://www.facebook.com/CreativeArtsResourceCenter">
-            <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
-          </ion-button>
+          <div class="innerSocialContainer">
+            <ion-button
+              shape="round"
+              fill="clear"
+              size="large"
+              color="dark"
+              href="https://www.facebook.com/CreativeArtsResourceCenter"
+            >
+              <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+            </ion-button>
+          </div>
         </div>
       </div>
     </ion-footer>

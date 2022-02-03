@@ -161,30 +161,125 @@ nav img {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 100vw;
-    margin-top: 4em
+    margin-top: 4em;
+    margin-bottom: 10.5em;
+    max-height: 60vh
 }
 
 .calendar {
-    min-width: 100%;
-    min-height: 100vh;
+    width: 100%;
+    height: 80vh;
 }
 
 .mobile {
     display: none;
-    min-width: 100%;
-    min-height: 100vh;
 }
 
 @media screen and (max-width: 885px) {
     .mobile {
-        display: block;
-        max-height: 40vh;
-        min-height: 40vh;
+      display: block;
+      max-height: 40vh;
     }
 
     .calendar {
-        width: 100%;
-        min-height: 30vh;
-        max-height: 30vh;
+      height:30vh
     }
+}
+
+//footer start
+
+h1 {
+  display: table;
+  padding: 0.7em;
+  background-color: #36454F;
+  color: white;
+}
+
+.containerTwo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  min-width: 100%;
+  background-image: linear-gradient(210deg, #FFFFF0, #ede0fb);
+}
+
+.contactContainer, .locationContainer, .socialContainer {
+  width: 33.333%;
+  min-height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1em
+}
+
+.contactContainer > h1, h3, p {
+  width: 100%
+}
+
+.locationContainer > h1, h3, p {
+  width: 100%
+}
+
+.socialContainer > h1, ion-button {
+  width: 100%
+}
+
+.contactContainer > h1 {
+  height: 2.5em;
+  margin-left: 0;
+  padding-left: 0
+}
+
+.locationContainer > h1 {
+  height: 2.5em
+}
+
+.socialContainer > h1 {
+  height: 2.5em
+}
+
+#locationLogo {
+  max-width: 7em;
+}
+
+.innerContactContainers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  min-width: 50ch;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.innerLocationContainer {
+  width: 100%;
+  min-width: 50ch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+.innerSocialContainer {
+  width: 100%;
+  min-width: 50ch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center
+}
+
+@media screen and (max-width: 900px) {
+  .contactContainer, .locationContainer {
+    width: 100%
+  }
+}
+
+ion-footer {
+  background-color: #FFFFF0;
+  color: #36454F;
+  width: 100vw
 }

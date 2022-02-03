@@ -3,8 +3,8 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle" />
     <nav>
       <ul>
+        <li><a class="two" href="#">Home</a></li>
         <li><a class="two" href="#">Contact</a></li>
-        <li><a class="two" href="localhost:8100/calendar">Calendar</a></li>
         <li><a class="two" href="#">Donate</a></li>
         <li><a class="two" href="#">Sign Up</a></li>
         <li><img id="headerLogo" src="../../assets/icon/icon.png" /></li>
@@ -15,6 +15,7 @@
       <span></span>
     </label>
   </header>
+
   <div class="container">
     <iframe
       class="calendar"
@@ -27,7 +28,7 @@
     ></iframe>
     <iframe
     class="mobile"
-      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fffff0&ctz=America%2FChicago&mode=AGENDA&showCalendars=0&showTabs=0&showPrint=0&showNav=0&showTitle=0&src=aThmMzUzOGpvZHBwc2xoY2w0OHNhZmplZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548"
+      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fffff0&ctz=America%2FChicago&mode=AGENDA&showCalendars=0&showTabs=0&showPrint=0&showNav=0&showTitle=0&showTz=0&src=aThmMzUzOGpvZHBwc2xoY2w0OHNhZmplZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548"
       style="border-width: 0"
       width="800"
       height="600"
@@ -35,4 +36,51 @@
       scrolling="no"
     ></iframe>
   </div>
+
+  <ion-footer>
+    <div class="containerTwo">
+      <div class="contactContainer">
+        <h1>Contact Us</h1>
+        <div class="innerContactContainers">
+          <h3>Fill Out Our Form</h3>
+          <ion-button color="success">
+            <div class="serviceButnText">
+              <span> Contact Form </span>
+            </div>
+          </ion-button>
+        </div>
+
+        <div class="innerContactContainers">
+          <h3>EMAIL</h3>
+          <p>creativekingdominternational@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="locationContainer">
+        <h1>Location</h1>
+
+        <div class="innerLocationContainer">
+          <h3>250 West Broadway,<br />Waukesha, WI 53186</h3>
+
+          <img id="locationLogo" src="../../assets/icon/icon.png" />
+        </div>
+      </div>
+
+      <div class="socialContainer">
+        <h1>Follow Us On Social Media</h1>
+
+        <div class="innerSocialContainer">
+          <ion-button
+            shape="round"
+            fill="clear"
+            size="large"
+            color="dark"
+            href="https://www.facebook.com/CreativeArtsResourceCenter"
+          >
+            <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </div>
+  </ion-footer>
 </ion-content>
