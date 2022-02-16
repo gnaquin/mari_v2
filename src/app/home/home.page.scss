@@ -168,6 +168,7 @@ nav a, nav img {
   display: flex;
   flex-direction: column;
   background-color: #36454F;
+  align-items: center;
 }
 
 // intro start
@@ -248,7 +249,7 @@ nav a, nav img {
   justify-content: space-evenly;
   align-content: center;
   background-color: #36454F;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   padding: 1em
 }
 
@@ -403,7 +404,8 @@ h1 {
 }
 
 .serviceButnText {
-  color: #FFFFF0
+  color: #FFFFF0;
+  font-size: 1em
 }
 
 ion-icon {
@@ -434,13 +436,56 @@ ion-card {
   background-image: linear-gradient(210deg, #FFFFF0, #ede0fb);
 }
 
-.contactContainer, .locationContainer, .socialContainer {
-  width: 33.333%;
+.map {
+  display: flex;
+  flex-wrap: wrap;
+  width: 97%;
+  height: 20em;
+  margin: 1em;
+}
+
+.locationContainer {
+  background-image: url("../../assets/pictures/mariMap.png");
+  background-position: center;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  color: white;
+  width: 80%
+}
+
+.contactContainer, .locationContainer {
   min-height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 1em
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #333333;
+  width: 20%
+}
+
+@media screen and (max-width: 1104px) {
+  .map {
+    height: auto
+  }
+
+  .locationContainer {
+    width: 100%;
+    min-height: 15em
+  }
+
+  .contactContainer {
+    width: 100%;
+    min-height: 8em;
+    padding-bottom: 1em
+  }
 }
 
 .contactContainer > h1, h3, p {
@@ -457,8 +502,7 @@ ion-card {
 
 .contactContainer > h1 {
   height: 2.5em;
-  margin-left: 0;
-  padding-left: 0
+  background-color: transparent;
 }
 
 .locationContainer > h1 {
@@ -481,16 +525,6 @@ ion-card {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.innerLocationContainer {
-  width: 100%;
-  min-width: 50ch;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center
 }
 
 .innerSocialContainer {

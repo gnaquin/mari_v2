@@ -231,31 +231,28 @@
       </div> -->
     </div>
 
+    <div class="map">
+
+      <div class="locationContainer">
+          <h3>250 West Broadway,<br />Waukesha, WI 53186</h3>
+      </div>
+
+      <div class="contactContainer">
+
+        <h1>Get in Touch</h1>
+        
+        <ion-button (click)="contactButton()" color="secondary">
+          <div class="serviceButnText">
+            <span> Contact Form </span>
+          </div>
+        </ion-button>
+      
+      </div>
+
+    </div>
+
     <ion-footer>
       <div class="containerTwo">
-
-        <div class="contactContainer">
-          <div class="innerContactContainers">
-            <p>creativekingdominternational@gmail.com</p>
-          </div>
-
-          <div class="innerContactContainers">
-            <ion-button (click)="contactButton()" color="success">
-              <div class="serviceButnText">
-                <span> Contact Form </span>
-              </div>
-            </ion-button>
-          </div>
-        </div>
-
-        <div class="locationContainer">
-
-          <div class="innerLocationContainer">
-            <h3>250 West Broadway,<br />Waukesha, WI 53186</h3>
-
-            <img id="locationLogo" src="../../assets/icon/icon.png" />
-          </div>
-        </div>
 
         <div class="socialContainer">
 
@@ -269,6 +266,10 @@
             >
               <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
             </ion-button>
+
+            <img id="locationLogo" src="../../assets/icon/icon.png" />
+
+            <p>creativekingdominternational@gmail.com</p>
           </div>
         </div>
       </div>
