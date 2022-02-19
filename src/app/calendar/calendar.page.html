@@ -16,66 +16,39 @@
     </label>
   </header>
 
-  <div class="bigContainer">
-    <div class="container">
-      <iframe
-        class="calendar"
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fffff0&ctz=America%2FChicago&showNav=0&showTabs=0&showPrint=0&showTitle=0&showDate=1&showCalendars=0&showTz=1&src=aThmMzUzOGpvZHBwc2xoY2w0OHNhZmplZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548"
-        style="border-width: 0"
-        width="800"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-      ></iframe>
-      <iframe
-        class="mobile"
-        src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fffff0&ctz=America%2FChicago&mode=AGENDA&showCalendars=0&showTabs=0&showPrint=0&showNav=0&showTitle=0&showTz=0&src=aThmMzUzOGpvZHBwc2xoY2w0OHNhZmplZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548"
-        style="border-width: 0"
-        width="800"
-        height="600"
-        frameborder="0"
-        scrolling="no"
-      ></iframe>
-    </div>
-
-    <ion-footer>
-      <div class="containerTwo">
-        <div class="contactContainer">
-          <div class="innerContactContainers">
-            <p>creativekingdominternational@gmail.com</p>
-          </div>
-
-          <div class="innerContactContainers">
-            <ion-button (click)="contactButton()" color="success">
-              <div class="serviceButnText">
-                <span> Contact Form </span>
-              </div>
-            </ion-button>
-          </div>
-        </div>
-
-        <div class="locationContainer">
-          <div class="innerLocationContainer">
-            <h3>250 West Broadway,<br />Waukesha, WI 53186</h3>
-
-            <img id="locationLogo" src="../../assets/icon/icon.png" />
-          </div>
-        </div>
-
-        <div class="socialContainer">
-          <div class="innerSocialContainer">
-            <ion-button
-              shape="round"
-              fill="clear"
-              size="large"
-              color="dark"
-              href="https://www.facebook.com/CreativeArtsResourceCenter"
-            >
-              <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
-            </ion-button>
-          </div>
-        </div>
-      </div>
-    </ion-footer>
+  <div class="container">
+    <iframe
+      class="calendar"
+      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fffff0&ctz=America%2FChicago&showNav=0&showTabs=0&showPrint=0&showTitle=0&showDate=1&showCalendars=0&showTz=1&src=aThmMzUzOGpvZHBwc2xoY2w0OHNhZmplZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548"
+      style="border-width: 0"
+      width="100%"
+      height="30em"
+      frameborder="0"
+      scrolling="no"
+    ></iframe>
+    <iframe
+      class="mobile"
+      src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23fffff0&ctz=America%2FChicago&mode=AGENDA&showCalendars=0&showTabs=0&showPrint=0&showNav=0&showTitle=0&showTz=0&src=aThmMzUzOGpvZHBwc2xoY2w0OHNhZmplZmNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%23795548"
+      style="border-width: 0"
+      width="100%"
+      height="auto"
+      frameborder="0"
+      scrolling="no"
+    ></iframe>
   </div>
+
 </ion-content>
+
+<ion-footer>
+  <ion-button
+    shape="round"
+    color="light"
+    href="https://www.facebook.com/CreativeArtsResourceCenter"
+  >
+    <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
+  </ion-button>
+
+  <img id="locationLogo" src="../../assets/icon/icon.png" />
+
+  <p>creativekingdominternational@gmail.com</p>
+</ion-footer>

@@ -165,9 +165,7 @@ nav a, nav img {
 }
 // end header
 
-.bigContainer {
-  display: flex;
-  flex-direction: column;
+ion-content {
   background-color: #36454F;
 }
 
@@ -175,10 +173,8 @@ nav a, nav img {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: 100vw;
+    max-width: 100%;
     margin-top: 3.5em;
-    margin-bottom: 10em;
-    max-height: 60vh
 }
 
 .calendar {
@@ -193,119 +189,41 @@ nav a, nav img {
 @media screen and (max-width: 885px) {
     .mobile {
       display: block;
-      max-height: 40vh;
+      height: 30vh
     }
 
     .calendar {
-      height:30vh
+      height: 50vh
     }
 }
 
 //footer start
-
-.containerTwo{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  min-width: 100%;
-  background-image: linear-gradient(210deg, #FFFFF0, #ede0fb);
-}
-
-.contactContainer, .locationContainer, .socialContainer {
-  width: 33.333%;
-  min-height: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 1em
-}
-
-.contactContainer > h1, h3, p {
-  width: 100%
-}
-
-.locationContainer > h1, h3, p {
-  width: 100%
-}
-
-.socialContainer > h1, .socialContainer > ion-button {
-  width: 100%
-}
-
-.serviceButnText {
-  color: #FFFFF0
-}
-
-.contactContainer > h1 {
-  height: 2.5em;
-  margin-left: 0;
-  padding-left: 0
-}
-
-.locationContainer > h1 {
-  height: 2.5em
-}
-
-.socialContainer > h1 {
-  height: 2.5em
-}
 
 #locationLogo {
   max-width: 7em;
 }
 
-.innerContactContainers {
-  display: flex;
-  flex-wrap: wrap;
-  width: 50%;
-  min-width: 50ch;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.innerLocationContainer {
-  width: 100%;
-  min-width: 50ch;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center
-}
-
-.innerSocialContainer {
-  width: 100%;
-  min-width: 50ch;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  text-align: center
-}
-
-@media screen and (max-width: 900px) {
-  .contactContainer, .locationContainer {
-    width: 100%
-  }
-}
-
-.testimony {
-  background-color: #36454F;
-  width: 100%;
-}
-
-// .testimony > swiper {
-//   width: 100%;
-//   border: .5em solid red;
-//   font-size: 2em;
-//   text-align: center;
-// }
-
-// calendar and contact end
-//footer start
 ion-footer {
-  background-color: #FFFFF0;
-  color: #36454F;
-  width: 100vw;
+  background-color: #21292e;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 10em;
+  margin-top: .5em
+}
+
+ion-footer p, ion-button, img {
+  width: 33.333%;
+}
+
+@media screen and (max-width: 500px) {
+  ion-footer p {
+    width: 100%;
+  }
+
+  #locationLogo {
+    width: 100%;
+  }
 }
