@@ -7,7 +7,6 @@ ion-footer {
   justify-content: space-around;
   align-items: center;
   height: 10em;
-  margin-top: .5em
 }
 
 ion-footer p {
@@ -30,5 +29,23 @@ ion-footer p {
 
   #footerBtn {
     width: 100%
+  }
+}
+
+.thirds {
+  width: 33.333%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1100px){
+  ion-footer {
+    height: auto
+  }
+
+  .thirds {
+    width: 100%;
+    padding: 1em
   }
 }

@@ -1,6 +1,7 @@
 <app-header></app-header>
 
 <ion-content>
+  <div class="page">
     <div class="cover">
       <img id="big_pic" src="../../assets/pictures/logo_location_mari_v2.jpg" />
       <img id="small_pic" src="../../assets/pictures/logo_small.jpg" />
@@ -18,14 +19,14 @@
     <div class="big_container">
       <div class="container">
         <div class="innerContainer">
-          <ion-card class="calCard">
-            <ion-card-header>
+          <ion-card class="calCard" color="light">
+            <ion-card-header color="light">
               <ion-icon name="calendar-outline"></ion-icon>
-              <ion-card-title>Upcoming Events</ion-card-title>
+              <ion-card-title color="light">Upcoming Events</ion-card-title>
             </ion-card-header>
-            <ion-card-content>
-              <ion-list>
-                <ion-item>
+            <ion-card-content color="light">
+              <ion-list color="light">
+                <ion-item color="light">
                   <ion-label
                     >Art Community <br /><i>Nov 23rd 7PM - 9PM</i></ion-label
                   >
@@ -39,7 +40,7 @@
                     </div>
                   </ion-button>
                 </ion-item>
-                <ion-item>
+                <ion-item color="light">
                   <ion-label
                     >Creative Worship <br /><i
                       >Nov 27th 10AM - 11AM</i
@@ -51,11 +52,10 @@
                     </div>
                   </ion-button>
                 </ion-item>
-                <ion-item>
+                <ion-item color="light">
                   <ion-label
-                    >Kingdom Writers <br /> Association <br /><i
-                      >Dec 3rd 7PM - 9PM</i
-                    ></ion-label
+                    >Kingdom Writers <br />
+                    Association <br /><i>Dec 3rd 7PM - 9PM</i></ion-label
                   >
                   <ion-button
                     (click)="contactButton()"
@@ -67,11 +67,10 @@
                     </div>
                   </ion-button>
                 </ion-item>
-                <ion-item>
+                <ion-item color="light">
                   <ion-label
-                    >Kingdom Dance <br /> and Movement <br /><i
-                      >Dec 15th 7PM - 9PM</i
-                    ></ion-label
+                    >Kingdom Dance <br />
+                    and Movement <br /><i>Dec 15th 7PM - 9PM</i></ion-label
                   >
                   <ion-button expand="block" color="success">
                     <div class="serviceButnText">
@@ -79,7 +78,7 @@
                     </div>
                   </ion-button>
                 </ion-item>
-                <ion-item>
+                <ion-item color="light">
                   <ion-label
                     >Art Community <br /><i>Dec 20th 7PM - 9PM</i></ion-label
                   >
@@ -93,7 +92,7 @@
                     </div>
                   </ion-button>
                 </ion-item>
-                <ion-item>
+                <ion-item color="light">
                   <ion-label
                     >Workshop <br /><i>Dec 23rd 7PM - 9PM</i></ion-label
                   >
@@ -103,7 +102,7 @@
                     </div>
                   </ion-button>
                 </ion-item>
-                <ion-item>
+                <ion-item color="light">
                   <ion-label
                     >Workshop <br /><i>Dec 29th 7PM - 9PM</i></ion-label
                   >
@@ -113,7 +112,7 @@
                     </div>
                   </ion-button>
                 </ion-item>
-                <ion-item>
+                <ion-item color="light">
                   <ion-label>Workshop <br /><i>Jan 3rd 7PM - 9PM</i></ion-label>
                   <ion-button expand="block" color="success">
                     <div class="serviceButnText">
@@ -251,6 +250,6 @@
         </ion-button>
       </div>
     </div>
-
-    <app-footer></app-footer>
+  </div>
+  <app-footer></app-footer>
 </ion-content>

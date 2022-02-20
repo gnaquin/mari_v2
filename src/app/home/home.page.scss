@@ -1,9 +1,9 @@
-ion-content {
+.page {
   display: flex;
   flex-direction: column;
-  background-color: #36454F;
   align-items: center;
   justify-content: center;
+  background-color: #36454F;
 }
 
 // cover start
@@ -11,6 +11,7 @@ ion-content {
   margin-top: 2em;
   display: flex;
   justify-content: end;
+  background-color: #36454F;
 }
 
 .cover > h1 {
@@ -74,6 +75,7 @@ ion-content {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: center;
+  background-color: #36454F;
 }
 
 .container {
@@ -197,7 +199,7 @@ h1 {
 
 @media screen and (max-width: 635px) {
   .innerContainer {
-    max-width: 95%;
+    min-width: 95vw;
     padding: 0
   }
 
@@ -255,11 +257,6 @@ ion-icon {
 ion-card {
   text-align: center;
   font-size: 4em;
-  background-color: #FFFFF0;
-}
-
-ion-item {
-  --ion-item-background: #FFFFF0
 }
 
 .calCard {
@@ -267,7 +264,6 @@ ion-item {
   min-width: 100%;
   margin: 0 0 .5em 0;
   border-radius: 0;
-  background-color: #FFFFF0
 }
 
 .calCard ion-button {
@@ -279,9 +275,11 @@ ion-item {
 .map {
   display: flex;
   flex-wrap: wrap;
+  min-width: 97%;
   max-width: 97%;
   height: 20em;
-  margin: 1em;
+  margin-top: 2em;
+  margin-bottom: 4em
 }
 
 .locationContainer {
