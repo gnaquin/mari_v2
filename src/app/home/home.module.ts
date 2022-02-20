@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
-import { HeaderModule } from '../component/header/header.component.module';
-import { FooterModule } from '../component/footer/footer.component.module';
+import { HeaderModule } from '../components/header/header.component.module';
+import { FooterModule } from '../components/footer/footer.component.module';
 
 
 @NgModule({
