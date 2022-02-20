@@ -1,8 +1,9 @@
-.page {
+ion-content {
   display: flex;
   flex-direction: column;
   background-color: #36454F;
   align-items: center;
+  width: 100vw
 }
 
 // intro start
@@ -10,7 +11,6 @@
   margin-top: 2em;
   display: flex;
   justify-content: end;
-  background-color: #36454F;
 }
 
 .cover > h1 {
@@ -72,7 +72,6 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: #36454F;
   align-content: center;
 }
 
@@ -81,7 +80,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-content: center;
-  background-color: #36454F;
   margin: 1em;
   padding: 1em;
 }
@@ -91,7 +89,6 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #36454F;
   padding-right: .5em
 }
 
@@ -347,10 +344,6 @@ ion-card {
   height: 2.5em
 }
 
-#locationLogo {
-  max-width: 7em;
-}
-
 .innerContactContainers {
   display: flex;
   flex-wrap: wrap;
@@ -376,49 +369,3 @@ ion-card {
     width: 100%
   }
 }
-
-.testimony {
-  background-color: #36454F;
-  width: 100%;
-}
-
-// .testimony > swiper {
-//   width: 100%;
-//   border: .5em solid red;
-//   font-size: 2em;
-//   text-align: center;
-// }
-
-// calendar and contact end
-
-//footer start
-ion-footer {
-  background-color: #21292e;
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-  height: 10em;
-  margin-top: .5em
-}
-
-ion-footer p {
-  width: fit-content;
-  text-align: center;
-}
-
-@media screen and (max-width: 500px) {
-  ion-footer p {
-    width: 100%;
-  }
-
-  #locationLogo {
-    width: 100%;
-  }
-
-  #footerBtn {
-    width: 100%
-  }
-}
-

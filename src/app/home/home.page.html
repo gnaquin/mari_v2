@@ -1,8 +1,6 @@
 <app-header></app-header>
 
 <ion-content>
-  <div class="page">
-
     <div class="cover">
       <img id="big_pic" src="../../assets/pictures/logo_location_mari_v2.jpg" />
       <img id="small_pic" src="../../assets/pictures/logo_small.jpg" />
@@ -236,12 +234,6 @@
           </div>
         </div>
       </div>
-
-      <!-- <div class="container">
-        <div class="testimony">
-
-        </div>
-      </div> -->
     </div>
 
     <div class="map">
@@ -252,16 +244,6 @@
       <div class="contactContainer">
         <h1>Get in Touch</h1>
 
-        <!-- <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdWPif5D-Ige00RHWZ4w2t9YB-i9azPhQu17xgf--Ov4q8DAg/viewform?embedded=true"
-          width="100%"
-          height="auto"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        > -->
-
         <ion-button (click)="contactButton()" color="secondary">
           <div class="serviceButnText">
             <span> Contact Form </span>
@@ -269,21 +251,5 @@
         </ion-button>
       </div>
     </div>
-
-    <ion-footer>
-      <div class="footerBtn">
-        <ion-button
-          shape="round"
-          color="light"
-          href="https://www.facebook.com/CreativeArtsResourceCenter"
-        >
-          <ion-icon slot="icon-only" name="logo-facebook"></ion-icon>
-        </ion-button>
-      </div>
-
-      <img id="locationLogo" src="../../assets/icon/icon.png" />
-
-      <p>creativekingdominternational@gmail.com</p>
-    </ion-footer>
-  </div>
+    <app-footer></app-footer>
 </ion-content>
