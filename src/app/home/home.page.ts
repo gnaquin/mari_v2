@@ -15,12 +15,4 @@ export class HomePage {
       'https://docs.google.com/forms/d/e/1FAIpQLSdWPif5D-Ige00RHWZ4w2t9YB-i9azPhQu17xgf--Ov4q8DAg/viewform?usp=sf_link';
   };
 
-  donateButton() {
-    console.log('donate button clicked');
-  };
-
-  registerButton() {
-    console.log('register button clicked');
-  };
-
 }

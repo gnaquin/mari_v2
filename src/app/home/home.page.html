@@ -1,22 +1,7 @@
+<app-header></app-header>
+
 <ion-content>
   <div class="page">
-    <header>
-      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-      <nav>
-        <ul>
-          <li><a class="two" (click)="contactButton()">Contact</a></li>
-          <li><a class="two" [routerLink]="['/calendar']">Calendar</a></li>
-          <li><a class="two" (click)="donateButton()">Donate</a></li>
-          <li><a class="two" (click)="registerButton()">Sign Up</a></li>
-          <li><img id="headerLogo" src="../../assets/icon/icon.png" /></li>
-        </ul>
-      </nav>
-      <img id="headerLogoTwo" src="../../assets/icon/icon.png" />
-      <label for="nav-toggle" class="nav-toggle-label">
-        <span></span>
-      </label>
-    </header>
-    <!-- header ends -->
 
     <div class="cover">
       <img id="big_pic" src="../../assets/pictures/logo_location_mari_v2.jpg" />
@@ -32,8 +17,7 @@
       </h1>
     </div>
 
-    <div class="big_container"> 
-      <app-header></app-header>
+    <div class="big_container">
       <div class="container">
         <div class="innerContainer">
           <ion-card class="calCard">
